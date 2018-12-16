@@ -1,0 +1,5 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/6fbc5175-c3b1-492b-9af7-8f3d8aed8150/resourceGroups/estetic-room/providers/Microsoft.Web/sites/estetic-room",
+    "appService.deploySubpath": ""
+
+}
