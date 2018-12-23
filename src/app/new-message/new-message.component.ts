@@ -23,6 +23,6 @@ export class NewMessageComponent implements OnInit {
 
   post() {
     this.webService.postMessage(this.message);
-    this.onPosted.emit(this.message.toString());
+    this.onPosted.emit(this.message);
   }
 }
