@@ -16,12 +16,28 @@ import { WebService } from './web.service';
 import { HttpClientModule } from '@angular/common/http';
 import { NewMessageComponent } from './new-message/new-message.component';
 import { FormsModule  } from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: HomeComponent
+  },
+  {
+    path: 'messages',
+    component: MessagesComponent
+  }
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     MessagesComponent,
     NewMessageComponent,
+    HeaderComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,7 +49,8 @@ import { FormsModule  } from '@angular/forms';
     MatInputModule,
     MatSnackBarModule,
     MatToolbarModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [ WebService ],
   bootstrap: [AppComponent]
