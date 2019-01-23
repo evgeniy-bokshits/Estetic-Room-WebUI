@@ -15,8 +15,9 @@ import { MessagesComponent } from './messages/messages.component';
 import { WebService } from './web.service';
 import { HttpClientModule } from '@angular/common/http';
 import { NewMessageComponent } from './new-message/new-message.component';
+import { ListErrorsComponent } from './shared/list-errors.component';
 import { FormsModule  } from '@angular/forms';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from './shared/layout/header.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -38,6 +39,7 @@ const routes: Routes = [
     NewMessageComponent,
     HeaderComponent,
     HomeComponent,
+    ListErrorsComponent
   ],
   imports: [
     BrowserModule,
